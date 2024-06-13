@@ -1,0 +1,8 @@
+.DS_Store
+*.mlx
+*.mat
+data/
+*.pdf
+*.csv
+*.xlsx
+*.zip
