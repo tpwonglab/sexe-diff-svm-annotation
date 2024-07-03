@@ -13,7 +13,32 @@
 - **BehavMouse\[N/A\]:** Representation of the mouse N or A interacting with object X. It is a 1D matrix where each interaction is represented as a binary (0: off; 1: on).
 - **frameSec\[1/2\]\[Start/End\]:** Timestamp of a specific mouse. (e.g., frameSec1Start := 1 means that the section 1 starts on timestamp 1 of *NeuAll*). The dataset provides 4 timestamps (i.e., start and end for section 1; start and end for section 2).
 ### Project Structure
-- `run.m`: Program that generates svm accuracy based on file/folder and data analytical method
+#### Updated Project Structure
+```
+|_ run.m                        # User runs this file (main file)
+|
+|_ utils                        # Folder with helper methods
+|  |_ loadFolder.m
+|  |_ loadFile.m
+|  |_ loadData.m
+|  |_ defineNeuroResponse.m
+|  |_ defineBouts.m
+|  |_ decodeSVM.m
+|  |_ createFolder.m
+|  |_ createCsvIfNotExist.m
+|  |_ appendSpecialRowToCsv.m
+|  |_ appendDefaultRowToCsv.m
+|
+|_ svm                          # Actual SVM methods written by previous dev
+|  |_ Neuro_Responces.m
+|  |_ MouseClass.m
+|  |_ Linear_decoding.m
+|  |_ gaussFilt.m
+|  |_ Balancing_samples.m
+
+```
+#### Old Project Structure
+**NOTE: You'll have to move all files from `svm` to `archive` to run `archive` code**
 - `main.m`: Program that generates the coefficient correlation and svm accuracy
 - `MouseClass.m`: Organize section timestamp for each mouse
 - `gaussFilt.m`: Apply Gaussian Filtering to dataset. Explained in **3. Gaussian Filtering**
