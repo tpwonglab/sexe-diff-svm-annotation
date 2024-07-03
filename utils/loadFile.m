@@ -1,4 +1,4 @@
-function [fileName, filePath, fileLabel] = loadFile()
+function [fileName, filePath] = loadFile()
     [fileName, filePath] = uigetfile('*.mat');
     if filePath == 0
         error('File selection canceled.');
