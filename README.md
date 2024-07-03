@@ -48,5 +48,5 @@
 - `old-main.m`: Previous developer's `main.m` file
 ### How to run
 0. Ensure that you have a valid MATLAB installation.
-1. Download codebase and ensure all files in the section above are within the same folder (files cannot be in subfolders)
+1. Download codebase
 2. Open `run.m` on MATLAB
