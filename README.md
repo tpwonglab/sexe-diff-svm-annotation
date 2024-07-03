@@ -13,6 +13,7 @@
 - **BehavMouse\[N/A\]:** Representation of the mouse N or A interacting with object X. It is a 1D matrix where each interaction is represented as a binary (0: off; 1: on).
 - **frameSec\[1/2\]\[Start/End\]:** Timestamp of a specific mouse. (e.g., frameSec1Start := 1 means that the section 1 starts on timestamp 1 of *NeuAll*). The dataset provides 4 timestamps (i.e., start and end for section 1; start and end for section 2).
 ### Project Structure
+- `run.m`: Program that generates svm accuracy based on file/folder and data analytical method
 - `main.m`: Program that generates the coefficient correlation and svm accuracy
 - `MouseClass.m`: Organize section timestamp for each mouse
 - `gaussFilt.m`: Apply Gaussian Filtering to dataset. Explained in **3. Gaussian Filtering**
@@ -23,7 +24,4 @@
 ### How to run
 0. Ensure that you have a valid MATLAB installation.
 1. Download codebase and ensure all files in the section above are within the same folder (files cannot be in subfolders)
-2. Open `main.m` on MATLAB
-3. Click on `Run to End` on `main.m`
-4. Choose data to run the program on
-	1. `data` folder will be generated with a sub folder for the correlation graphs and an `.csv` with the SVM performances
+2. Open `run.m` on MATLAB
